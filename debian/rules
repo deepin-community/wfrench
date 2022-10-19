@@ -1,0 +1,11 @@
+#!/usr/bin/make -f
+export DH_VERBOSE=1
+
+%:
+	dh $@
+
+override_dh_auto_install:
+	dh_installman
+	echo Root cmd: ${DEB_GAIN_ROOT_CMD}
+	${DEB_GAIN_ROOT_CMD} install -o root -g root -m 644 french debian/wfrench/usr/share/dict
+	installdeb-wordlist

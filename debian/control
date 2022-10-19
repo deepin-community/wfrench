@@ -1,0 +1,20 @@
+Source: wfrench
+Section: text
+Priority: optional
+Maintainer: guillaume pernot <gpernot@praksys.org>
+Standards-Version: 4.5.0
+Build-Depends: debhelper-compat (= 12)
+Build-Depends-Indep: dictionaries-common-dev (>= 1.2)
+Rules-Requires-Root: dpkg/target-subcommand
+Vcs-Git: https://salsa.debian.org/gpernot-guest/wfrench.git
+Vcs-Browser: https://salsa.debian.org/gpernot-guest/wfrench
+Homepage: https://salsa.debian.org/gpernot-guest/wfrench
+
+Package: wfrench
+Architecture: all
+Depends: ${wordlist:Depends}, ${misc:Depends}, dictionaries-common, debconf
+Provides: wordlist
+Description: French dictionary words for /usr/share/dict
+ This package provides the file /usr/share/dict/french containing a
+ list of French words. This list can be used by spelling checkers,
+ and by programs such as look(1).

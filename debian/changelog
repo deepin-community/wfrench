@@ -1,0 +1,272 @@
+wfrench (1.2.6-1) unstable; urgency=medium
+
+  * new upstream release :
+    - Removed duplicates
+    - Reorder according to LC_COLLATE
+  * debian/control:
+    - Bumped Standards-Version to 4.5.0.
+
+ -- guillaume pernot <gpernot@praksys.org>  Thu, 05 Mar 2020 14:39:47 +0100
+
+wfrench (1.2.5-1) unstable; urgency=medium
+
+  * new upstream release :
+    - removed non-existant "accèssibilité"
+    - fixed lines with several words
+  * debian/control:
+    - Bumped Standards-Version to 4.4.0.
+  * debian/watch:
+    - new gitlab filenamemangle scheme
+
+ -- guillaume pernot <gpernot@praksys.org>  Sun, 18 Aug 2019 16:50:53 +0200
+
+wfrench (1.2.4-1) unstable; urgency=low
+
+  * New maintainer (Closes: #858663)
+  * Use https://gitlab.com/gpernot/wfrench as upstream (Closes: #329474)
+  * debian/control:
+      - Bumped Standards-Version to 4.2.1.
+
+ -- guillaume pernot <gpernot@praksys.org>  Thu, 06 Sep 2018 13:44:09 +0200
+
+wfrench (1.2.3-11) unstable; urgency=medium
+
+  * QA upload.
+  * Ack for NMU. Thanks to Andrey Rahmatullin. (Closes: #846456)
+  * Set Debian QA Groups as maintainer. (see #858663)
+  * Migrations:
+      - debian/rules to simplified format.
+      - DH level to 10.
+  * debian/control:
+      - Bumped Standards-Version to 4.0.0.
+      - Removed no longer needed build dependency patch.
+      - Updated the VCS fields.
+  * debian/copyright:
+      - Reorganized the file.
+      - Updated the packaging copyright years.
+  * debian/patches/: added numbers to patch names.
+  * debian/watch: added a fake site to explain about the
+    current status of the original upstream homepage.
+
+ -- Joao Eriberto Mota Filho <eriberto@debian.org>  Mon, 18 Sep 2017 15:51:20 -0300
+
+wfrench (1.2.3-10.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Add libfl-dev to Build-Depends (Closes: #846456).
+
+ -- Andrey Rahmatullin <wrar@debian.org>  Sun, 01 Jan 2017 17:03:18 +0500
+
+wfrench (1.2.3-10) unstable; urgency=low
+
+  * New maintainer (Closes: #654554)
+  * Bump Standards-Version to 3.9.3.1
+  * Bump debhelper compatibility to 9
+  * Fixed lintian warnings:
+    - debian-rules-missing-recommended-target (build-arch and build-indep)
+    - format-3.0-but-debian-changes-patch
+  * Add debian/patches directory
+  * Remove unnecessary versioned dependencies (by Francois Marier)
+
+ -- Khalid El Fathi <khalid@elfathi.fr>  Sun, 18 Mar 2012 18:24:23 +0100
+
+wfrench (1.2.3-9) unstable; urgency=low
+
+  * Bump Standards-Version to 3.9.1
+  * Bump debhelper compatibility to 8
+
+ -- Francois Marier <francois@debian.org>  Wed, 22 Dec 2010 17:25:47 +1300
+
+wfrench (1.2.3-8) unstable; urgency=low
+
+  * Bump Standards-Version to 3.8.4
+  * Add dependency on ${misc:Depends}
+  * Switch to 3.0 (quilt) source format
+
+ -- Francois Marier <francois@debian.org>  Thu, 11 Feb 2010 08:48:54 +1300
+
+wfrench (1.2.3-7) unstable; urgency=low
+
+  * Add words 'kvas' and 'kwas' (closes: #551367)
+
+  * Bump Standards-Version up to 3.8.3
+  * Bump debhelper compatibility to 7
+  * Cleanup debian/copyright (lintian notice)
+  * Add a dummy watch file (lintian notice)
+
+ -- Francois Marier <francois@debian.org>  Sun, 18 Oct 2009 11:54:37 +1300
+
+wfrench (1.2.3-6) unstable; urgency=low
+
+  * Add words 'varus' and 'valgus' (closes: #489429)
+
+ -- Francois Marier <francois@debian.org>  Sun, 06 Jul 2008 10:44:06 +1200
+
+wfrench (1.2.3-5) unstable; urgency=low
+
+  * Add words 'têteau' and 'lamaserie' (closes: #486645)
+  * Remove blurb about /usr/dict in the manpage
+
+ -- Francois Marier <francois@debian.org>  Wed, 18 Jun 2008 10:25:46 +1200
+
+wfrench (1.2.3-4) unstable; urgency=low
+
+  * Add word 'solen' (closes: #485338)
+  * git.debian.org supports the git protocol (updated debian/control)
+  * Bump Standards-Version up to 3.8.0
+
+ -- Francois Marier <francois@debian.org>  Mon, 09 Jun 2008 11:15:41 +1200
+
+wfrench (1.2.3-3) unstable; urgency=low
+
+  * Proper copyright statement in debian/copyright
+  * Convert the wordlist to UTF-8 (closes: #470455)
+
+ -- Francois Marier <francois@debian.org>  Wed, 12 Mar 2008 07:25:39 +1300
+
+wfrench (1.2.3-2) unstable; urgency=low
+
+  * Adopt this package (closes: #464330)
+  * Fix the spelling of "désennuyer" (closes: #330747)
+  * Add some missing words (closes: #340956)
+
+  Packaging changes:
+  * Bump Standards-Version to 3.7.3 and debhelper compatibility to 6
+  * Cleanup the copyright file
+  * Don't ignore clean errors outright
+  * Cleanup commented-out commands in debian/rules
+  * Mention git collab-maint repository in debian/control
+  * Add debconf as a dependency
+  * Move debhelper into Build-depends
+
+ -- Francois Marier <francois@debian.org>  Thu, 07 Feb 2008 20:25:23 +1300
+
+wfrench (1.2.3-1) unstable; urgency=low
+
+  * New upstream release
+  * Added a fiew words
+  * Removed duplicates entries and sorted file (closes: #324079)
+
+ -- Nicolas Sabouret <nico@debian.org>  Mon, 29 Aug 2005 13:59:44 +0200
+
+wfrench (1.2.2-1) unstable; urgency=low
+
+  * New upstream release (more words from Benoit Sibaud)
+  * connections added again (subj. "nous connections")
+  * Removed postinst and prerm scripts (closes: #270029)
+
+ -- Nicolas Sabouret <nico@debian.org>  Wed,  6 Oct 2004 15:59:06 +0200
+
+wfrench (1.2.1-1) unstable; urgency=low
+
+  * New upstream release (closes: #256388, #262031)
+
+ -- Nicolas Sabouret <nico@debian.org>  Fri, 30 Jul 2004 10:09:15 +0200
+
+wfrench (1.2-1) unstable; urgency=low
+
+  * New upstream release (closes: #240449)
+
+ -- Nicolas Sabouret <nico@debian.org>  Thu,  8 Apr 2004 18:04:18 +0200
+
+wfrench (1.1-2) unstable; urgency=low
+
+  * New version of dictionaries-common (closes: #232181)
+
+ -- Nicolas Sabouret <nico@debian.org>  Wed, 11 Feb 2004 16:55:01 +0100
+
+wfrench (1.1-1) unstable; urgency=low
+
+  * Modified upstream (see README.Debian)
+  * Added some words in dico (closes: #208695)
+
+ -- Nicolas Sabouret <nico@debian.org>  Fri,  5 Sep 2003 10:18:38 +0200
+
+wfrench (1.0-14) unstable; urgency=low
+
+  * Removed "'u" rule in diacrit7to8.l (closes: #201080)
+
+ -- Nicolas Sabouret <nico@debian.org>  Tue, 15 Jul 2003 13:43:57 +0200
+
+wfrench (1.0-13) unstable; urgency=low
+
+  * Rebuild the package with new version of dictionaries-common
+
+ -- Nicolas SABOURET <nico@debian.org>  Fri, 25 Oct 2002 16:06:58 +0200
+
+wfrench (1.0-12) unstable; urgency=low
+
+  * New debian ispell policy (Closes: #164264)
+    Thanks to Agustín Martín Domingo for his help.
+
+ -- Nicolas SABOURET <nico@debian.org>  Fri, 27 Sep 2002 14:31:52 +0200
+
+wfrench (1.0-11) unstable; urgency=low
+
+  * Oops. Forgot update-alternatives in debhelper package management
+
+ -- Nicolas Sabouret <nico@limsi.fr>  Mon, 20 Aug 2001 16:55:06 +0200
+
+wfrench (1.0-10) unstable; urgency=low
+
+  * New maintainer
+  * Converted package management to debhelper
+  * Installing words.5 to /usr/man/man5/french.5 (Closes: #94360)
+  * Modifying rule "clean" to remove diacrit7to8
+
+ -- Nicolas Sabouret <nico@limsi.fr>  Thu, 19 Jul 2001 12:04:17 +0200
+
+wfrench (1.0-9) unstable; urgency=low
+
+  * Converted package management to YADA
+  * Upgraded to standards version 3.2.1 (closes: #80778)
+  * Added code provided by Charles Briscoe-Smith (closes: #40322)
+  * Updated manpage (closes: #63372)
+
+ -- Christophe Le Bars <clebars@debian.org>  Sat, 30 Dec 2000 17:23:55 +0100
+
+wfrench (1.0-8) frozen unstable; urgency=low
+
+  * Changed location to /usr/share and used update-alternatives (Fixes: Bug#27952)
+
+ -- Christophe Le Bars <clebars@debian.org>  Sun,  3 Jan 1999 08:37:50 -0600
+
+wfrench (1.0-7) frozen unstable; urgency=low
+
+  * Updated standards-version
+  * Applied non-maintainer release patch (Fixes: Bug#20853)
+
+ -- Christophe Le Bars <clebars@debian.org>  Wed,  8 Apr 1998 22:42:31 +0200
+
+wfrench (1.0-6.1) frozen unstable; urgency=low
+
+  * Non-maintainer release
+  * Use the same postinst, prerm, and postrm scripts for wfrench as for
+    the other wordlist packages. This partially deals with the excessive
+    prompting mentioned in #7454 and #19600. A proper solution requires
+    changing all wordlist packages to use update-alternatives, but that
+    is best left for Debian 2.1
+
+ -- Charles Briscoe-Smith <cpbs@debian.org>  Wed,  8 Apr 1998 02:52:53 +0100
+
+wfrench (1.0-6) unstable; urgency=low
+
+  * Added ext description (Bug#3687)
+
+ -- Christophe Le Bars <clebars@debian.org>  Fri, 11 Jul 1997 23:55:55 +0200
+
+wfrench (1.0-5) unstable; urgency=low
+
+  * Fixed bug #3927 (multi-arch support)
+  * Fixed bug #10212 (#!/bin/perl rather than #!/usr/bin/perl)
+  * Added wordlist in field 'Provides' (Bug#9395)
+
+ -- Christophe Le Bars <clebars@debian.org>  Sat, 7 Jun 1997 03:58:02 +0200
+
+wfrench (1.0-4) unstable; urgency=low
+
+  * New maintainer release
+  * New Debian Linux package maintenance system files
+  * Changed distribution
+
+ -- Christophe Le Bars <clebars@debian.org>  Sat, 26 Apr 1997 18:20:13 +0200
